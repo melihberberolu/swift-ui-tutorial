@@ -1,0 +1,42 @@
+
+[
+    {
+        "type": "Ninja",
+        "name": "Momochi Sandayu",
+        "category": "Basic",
+        "power": "+15 agility",
+        "state": "Istanbul",
+        "id": 1001,
+        "coordinates": {
+            "longitude": 41.0082,
+            "latitude": 28.9784
+        },
+        "imageName": "ninja"
+    },
+    {
+        "type": "Wizard",
+        "name": "Momochi Sandayu",
+        "category": "Basic",
+        "power": "+15 agility",
+        "state": "Istanbul",
+        "id": 1002,
+        "coordinates": {
+            "longitude": 41.0082,
+            "latitude": 28.9784
+        },
+        "imageName": "ninja"
+    },
+    {
+        "type": "Sensei",
+        "name": "Momochi Sandayu",
+        "category": "Basic",
+        "power": "+15 agility",
+        "state": "Istanbul",
+        "id": 1003,
+        "coordinates": {
+            "longitude": 41.0082,
+            "latitude": 28.9784
+        },
+        "imageName": "ninja"
+    }
+]

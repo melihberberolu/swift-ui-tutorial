@@ -9,9 +9,11 @@
 import SwiftUI
 
 struct CircleImage: View {
+    var image: Image
+    
     var body: some View {
         Group {
-            Image("Ninja")
+            image
                 .offset(x: 0, y: 24)
         }
         .padding(32)
@@ -24,6 +26,6 @@ struct CircleImage: View {
 
 struct CircleImage_Previews: PreviewProvider {
     static var previews: some View {
-        CircleImage()
+        CircleImage(image: Image("ninja"))
     }
 }

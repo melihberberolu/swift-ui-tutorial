@@ -8,24 +8,27 @@
 
 import SwiftUI
 
-struct ContentView: View {
+
+struct HeroDetail: View {
+    var hero: Heroes
+    
     var body: some View {
         VStack {
-            MapView()
+            MapView(coordinate: hero.locationCoordinate)
                 .frame(height: 300)
             
-            CircleImage()
+            CircleImage(image: hero.image)
                 .offset(y: -100)
                 .padding(.bottom, -100)
             
             VStack(alignment: .leading) {
-                Text("Ninja")
+                Text(hero.type)
                     .font(.largeTitle)
                 HStack {
-                    Text("Momochi Sandayu")
+                    Text(hero.name)
                         .font(.subheadline)
                     Spacer()
-                    Text("+15 Agility")
+                    Text(hero.power)
                         .font(.subheadline)
                 }
             }.padding()
@@ -33,11 +36,12 @@ struct ContentView: View {
             Spacer()
         }
         .edgesIgnoringSafeArea(.all)
+        .navigationBarTitle(Text(hero.name), displayMode: .inline)
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct HeroDetail_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        HeroDetail(hero: heroesData[0])
     }
 }
