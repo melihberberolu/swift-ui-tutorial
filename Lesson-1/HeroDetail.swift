@@ -10,7 +10,12 @@ import SwiftUI
 
 
 struct HeroDetail: View {
+    @EnvironmentObject var userData: UserData
     var hero: Heroes
+    
+    var heroIndex: Int {
+        userData.heroes.firstIndex(where: { $0.id == hero.id })!
+    }
     
     var body: some View {
         VStack {
@@ -22,8 +27,22 @@ struct HeroDetail: View {
                 .padding(.bottom, -100)
             
             VStack(alignment: .leading) {
-                Text(hero.type)
-                    .font(.largeTitle)
+                HStack {
+                    Text(hero.type)
+                        .font(.largeTitle)
+                    
+                    Button(action: {
+                        self.userData.heroes[self.heroIndex].isFavorite.toggle()
+                    }) {
+                        if self.userData.heroes[self.heroIndex].isFavorite {
+                            Image(systemName: "star.fill")
+                                .foregroundColor(.yellow)
+                        } else {
+                            Image(systemName: "star")
+                                .foregroundColor(.gray)
+                        }
+                    }
+                }
                 HStack {
                     Text(hero.name)
                         .font(.subheadline)
@@ -43,5 +62,6 @@ struct HeroDetail: View {
 struct HeroDetail_Previews: PreviewProvider {
     static var previews: some View {
         HeroDetail(hero: heroesData[0])
+            .environmentObject(UserData())
     }
 }

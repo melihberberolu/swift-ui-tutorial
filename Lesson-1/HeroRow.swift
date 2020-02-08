@@ -19,6 +19,12 @@ struct HeroRow: View {
             Text(hero.name)
                 .padding(.leading, 16)
             Spacer()
+            
+            if hero.isFavorite {
+                Image(systemName: "star.fill")
+                    .imageScale(.medium)
+                    .foregroundColor(.yellow)
+            }
         }
     }
 }

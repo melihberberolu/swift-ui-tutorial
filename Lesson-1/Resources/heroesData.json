@@ -11,7 +11,8 @@
             "longitude": 41.0082,
             "latitude": 28.9784
         },
-        "imageName": "ninja"
+        "imageName": "ninja",
+        "isFavorite": false,
     },
     {
         "type": "Wizard",
@@ -24,7 +25,8 @@
             "longitude": 41.0082,
             "latitude": 28.9784
         },
-        "imageName": "ninja"
+        "imageName": "ninja",
+        "isFavorite": true,
     },
     {
         "type": "Sensei",
@@ -37,6 +39,8 @@
             "longitude": 41.0082,
             "latitude": 28.9784
         },
-        "imageName": "ninja"
+        "imageName": "ninja",
+        "isFavorite": false,
+
     }
 ]

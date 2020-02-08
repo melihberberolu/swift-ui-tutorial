@@ -16,6 +16,7 @@ struct Heroes: Hashable, Codable, Identifiable {
     var power: String
     var state: String
     var category: Category
+    var isFavorite: Bool
     fileprivate var imageName: String
     fileprivate var coordinates: Coordinates
     

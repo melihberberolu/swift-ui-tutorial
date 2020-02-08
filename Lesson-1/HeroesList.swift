@@ -9,11 +9,23 @@
 import SwiftUI
 
 struct HeroesList: View {
+    @EnvironmentObject var userData: UserData
+    
+    @State var showFavoriteHeroes = false
+    
     var body: some View {
         NavigationView {
-            List(heroesData) { hero in
-                NavigationLink(destination: HeroDetail(hero: hero)) {
-                    HeroRow(hero: hero)
+            List {
+                Toggle(isOn: $userData.showFavoriteHeroes) {
+                    Text("Favorite Heroes")
+                }
+                
+                ForEach(userData.heroes) { hero in
+                    if !self.userData.showFavoriteHeroes || hero.isFavorite {
+                        NavigationLink(destination: HeroDetail(hero: hero)) {
+                            HeroRow(hero: hero)
+                        }
+                    }
                 }
             }
             .navigationBarTitle(Text("Heroes"))
@@ -23,9 +35,7 @@ struct HeroesList: View {
 
 struct HeroesList_Previews: PreviewProvider {
     static var previews: some View {
-        ForEach(["iPhone SE", "iPhone XS Max"], id: \.self) { deviceName in
-            HeroesList()
-                .previewDevice(PreviewDevice(rawValue: deviceName))
-        }
+        HeroesList()
+            .environmentObject(UserData())
     }
 }
