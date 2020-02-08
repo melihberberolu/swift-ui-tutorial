@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE48099C23EEF46A006D6644 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE48099B23EEF46A006D6644 /* MapView.swift */; };
 		EE68712623EEEBE30083A710 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE68712523EEEBE30083A710 /* AppDelegate.swift */; };
 		EE68712823EEEBE30083A710 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE68712723EEEBE30083A710 /* SceneDelegate.swift */; };
 		EE68712A23EEEBE30083A710 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE68712923EEEBE30083A710 /* ContentView.swift */; };
@@ -15,6 +16,7 @@
 		EE68713223EEEBE40083A710 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE68713023EEEBE40083A710 /* LaunchScreen.storyboard */; };
 		EE68713D23EEEBE40083A710 /* Lesson_1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE68713C23EEEBE40083A710 /* Lesson_1Tests.swift */; };
 		EE68714823EEEBE40083A710 /* Lesson_1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE68714723EEEBE40083A710 /* Lesson_1UITests.swift */; };
+		EE68715623EEEDF30083A710 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE68715523EEEDF30083A710 /* CircleImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EE48099B23EEF46A006D6644 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		EE68712223EEEBE30083A710 /* Lesson-1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lesson-1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE68712523EEEBE30083A710 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE68712723EEEBE30083A710 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +52,7 @@
 		EE68714323EEEBE40083A710 /* Lesson-1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Lesson-1UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE68714723EEEBE40083A710 /* Lesson_1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lesson_1UITests.swift; sourceTree = "<group>"; };
 		EE68714923EEEBE40083A710 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE68715523EEEDF30083A710 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +106,8 @@
 				EE68712523EEEBE30083A710 /* AppDelegate.swift */,
 				EE68712723EEEBE30083A710 /* SceneDelegate.swift */,
 				EE68712923EEEBE30083A710 /* ContentView.swift */,
+				EE68715523EEEDF30083A710 /* CircleImage.swift */,
+				EE48099B23EEF46A006D6644 /* MapView.swift */,
 				EE68712B23EEEBE40083A710 /* Assets.xcassets */,
 				EE68713023EEEBE40083A710 /* LaunchScreen.storyboard */,
 				EE68713323EEEBE40083A710 /* Info.plist */,
@@ -268,6 +274,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE68712623EEEBE30083A710 /* AppDelegate.swift in Sources */,
+				EE68715623EEEDF30083A710 /* CircleImage.swift in Sources */,
+				EE48099C23EEF46A006D6644 /* MapView.swift in Sources */,
 				EE68712823EEEBE30083A710 /* SceneDelegate.swift in Sources */,
 				EE68712A23EEEBE30083A710 /* ContentView.swift in Sources */,
 			);
