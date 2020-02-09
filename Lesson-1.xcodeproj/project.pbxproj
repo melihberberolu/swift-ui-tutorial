@@ -23,6 +23,8 @@
 		EE90A92F23EF24C50008B852 /* ninja.png in Resources */ = {isa = PBXBuildFile; fileRef = EE90A92E23EF24C50008B852 /* ninja.png */; };
 		EEA1E1A923EF269C004F2653 /* HeroesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA1E1A823EF269C004F2653 /* HeroesList.swift */; };
 		EECB6A2123EF384E001D67A0 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECB6A2023EF384E001D67A0 /* UserData.swift */; };
+		EECB6A2323EF402D001D67A0 /* Badge.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECB6A2223EF402D001D67A0 /* Badge.swift */; };
+		EECB6A2523EF410B001D67A0 /* HexagonParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECB6A2423EF410B001D67A0 /* HexagonParameters.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +67,8 @@
 		EE90A92E23EF24C50008B852 /* ninja.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ninja.png; sourceTree = "<group>"; };
 		EEA1E1A823EF269C004F2653 /* HeroesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesList.swift; sourceTree = "<group>"; };
 		EECB6A2023EF384E001D67A0 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		EECB6A2223EF402D001D67A0 /* Badge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Badge.swift; sourceTree = "<group>"; };
+		EECB6A2423EF410B001D67A0 /* HexagonParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexagonParameters.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,7 @@
 			children = (
 				EE4809A223EEFD2E006D6644 /* Heroes.swift */,
 				EE4809AC23EF1CFC006D6644 /* Data.swift */,
+				EECB6A2423EF410B001D67A0 /* HexagonParameters.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -146,6 +151,7 @@
 				EE68713023EEEBE40083A710 /* LaunchScreen.storyboard */,
 				EE68713323EEEBE40083A710 /* Info.plist */,
 				EEA1E1A823EF269C004F2653 /* HeroesList.swift */,
+				EECB6A2223EF402D001D67A0 /* Badge.swift */,
 			);
 			path = "Lesson-1";
 			sourceTree = "<group>";
@@ -300,8 +306,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EECB6A2523EF410B001D67A0 /* HexagonParameters.swift in Sources */,
 				EE4809AE23EF218E006D6644 /* Heroes.swift in Sources */,
 				EEA1E1A923EF269C004F2653 /* HeroesList.swift in Sources */,
+				EECB6A2323EF402D001D67A0 /* Badge.swift in Sources */,
 				EE68712623EEEBE30083A710 /* AppDelegate.swift in Sources */,
 				EE68715623EEEDF30083A710 /* CircleImage.swift in Sources */,
 				EE48099C23EEF46A006D6644 /* MapView.swift in Sources */,

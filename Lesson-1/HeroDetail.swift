@@ -11,6 +11,8 @@ import SwiftUI
 
 struct HeroDetail: View {
     @EnvironmentObject var userData: UserData
+    @State private var animationStarted = false
+    
     var hero: Heroes
     
     var heroIndex: Int {
@@ -22,9 +24,18 @@ struct HeroDetail: View {
             MapView(coordinate: hero.locationCoordinate)
                 .frame(height: 300)
             
-            CircleImage(image: hero.image)
-                .offset(y: -100)
-                .padding(.bottom, -100)
+            Button(action: {
+                withAnimation(.easeOut(duration: 4)) {
+                    self.animationStarted.toggle()
+                }
+            }) {
+                CircleImage(image: hero.image)
+            }
+            .offset(y: -80)
+            .padding(.bottom, -80)
+            .scaleEffect(animationStarted ? 1.5 : 1)
+            .animation(.spring())
+            .buttonStyle(PlainButtonStyle())
             
             VStack(alignment: .leading) {
                 HStack {
